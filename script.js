@@ -32,7 +32,8 @@ $("#search-city").on("click", function (event) {
         console.log(results.list[0].main.temp)
         console.log(results.list[0].main.humidity)
         console.log(results.list[0].wind.speed)
-
+        // We use this to empty our Weather Section so that we can refresh the section before new content is appended
+        $("#weather-section").empty();
         // Insert method/function here
         // Generate the HTML content dynamically 
         var name = $("<h3>").text(results.city.name);
@@ -40,10 +41,6 @@ $("#search-city").on("click", function (event) {
         var humidity = $("<p>").html(results.list[0].main.humidity);
         var windSpeed = $("<p>").html(results.list[0].wind.speed);
 
-        console.log(name)
-        console.log(temperature);
-        console.log(humidity)
-        console.log(windSpeed);
         // Transfer the Open Weather object into the respected fields in our html
         $("#weather-section").append(name,temperature,humidity,windSpeed)
 
