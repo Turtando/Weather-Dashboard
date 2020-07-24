@@ -11,5 +11,4 @@ Chris Turton
 
 Gif of Demo below:
 
-[](./assets/weatherdashboarddemo.gif)
-https://turtando.github.io/Weather-Dashboard / https://github.com/Turtando?tab=repositories
+[](/assets/weatherdashboarddemo.gif)
